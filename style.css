@@ -1,17 +1,28 @@
+/* 
+
+ - This is a Neves team project. The header and main are now complete.
+   Please do not modify the header and main at all. Please continue with
+   the one that has not been created. Good luck.
+
+*/
+
+
+
+
 /* Fonts of Website */
+@font-face {
+    /* English - 1 */
+    font-family: "Hind Mysuru";
+    src: url("Hind_Mysuru/HindMysuru-Bold.ttf") format("truetype");
+    font-style: normal;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-/* font-family: "Changa", sans-serif; */
-
-/* Araabic */
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-
-/* font-family: "Roboto", sans-serif; */
-
-/* English */
-
+@font-face {
+    /* Arabic - 1 */
+    font-family: "Zain";
+    src: url("Zain/Zain-ExtraLight.ttf");
+    font-style: normal;
+}
 
 /* Reset Page */
 * {
@@ -20,12 +31,396 @@
     box-sizing: border-box;
 }
 
-/* The Root */
+/* The Root Or Color Variables */
 :root {
     /* The Colors Of Website */
     --white: white;
     --balck: black;
+    --c1f232d: #1f232d;
+    --c313743: #313743;
+    --c00edff: #00edff;
     --transparent: transparent;
     --rbgaWhite: rgba(255, 255, 255, 0.5);
     --rbgaBlack: rgba(0, 0, 0, 0.5);
+}
+
+/* The body */
+body {
+    background-color: var(--c1f232d, #1f232d);
+}
+
+/* The container of header and main */
+div.co-header-main {
+    background-position: center;
+    background-size: cover;
+    background-image: url("Pictures/2.svg");
+    border: solid 2px var(--transparent, transparent);
+}
+
+/* The Header */
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/* The Container Of Logo */
+header div.box-logo {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div.box-logo img {
+    width: 50px;
+    filter: drop-shadow(0px 0px 20px var(--c00edff, #00edff));
+}
+
+/* The Navigation Bar */
+header nav {
+    width: 500px;
+    height: 80%;
+    border-radius: 10px;
+    background-color: var(--rbgaBlack, rgba(0, 0, 0, 0.5));
+    backdrop-filter: blur(20px);
+}
+
+header nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    direction: rtl;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    transition: all 0.5s ease;
+    opacity: 0.5;
+    text-decoration: none;
+    color: var(--white, white);
+    font-family: "Zain";
+    /* Arabic - 1 */
+}
+
+header nav ul li a:hover {
+    opacity: 0.7;
+}
+
+header nav ul li a.active {
+    opacity: 1;
+    filter: drop-shadow(0px 0px 25px var(--white, white));
+    text-shadow: 0 0 10px var(--white, white);
+}
+
+/* The Container Of Menu */
+header div.co-menu {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+header div.co-menu button.btn-menu {
+    all: unset;
+    width: 60px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div.co-menu button.btn-menu .fa-bars {
+    font-size: 30px;
+    color: var(--white, white);
+}
+
+header div.co-menu div.box-menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    direction: rtl;
+    transition: all 0.5s ease;
+    position: fixed;
+    top: 90px;
+    right: 20px;
+    left: 0;
+    border-radius: 10px 10px 0 0;
+    backdrop-filter: blur(20px);
+    background-color: var(--rbgaBlack, rgba(0, 0, 0, 0.5));
+    visibility: hidden;
+}
+
+header div.co-menu div.box-menu.active {
+    height: calc(100vh - 80px);
+    visibility: visible;
+    bottom: 0;
+}
+
+header div.co-menu div.box-menu ul {
+    width: 100%;
+    height: 100%;
+}
+
+header div.co-menu div.box-menu ul li {
+    list-style: none;
+}
+
+header div.co-menu div.box-menu ul li a {
+    width: 100%;
+    height: 50px;
+    display: block;
+    padding-right: 20px;
+    padding-left: 20px;
+    transition: all 0.5s ease;
+    line-height: 50px;
+    opacity: 0.5;
+    text-decoration: none;
+    color: var(--white, white);
+    font-family: "Zain";
+    /* Arabic - 1 */
+}
+
+header div.co-menu div.box-menu ul li a:hover {
+    opacity: 0.7;
+}
+
+header div.co-menu div.box-menu ul li a.active {
+    opacity: 1;
+}
+
+/* Responsive Header */
+@media (max-width: 1200px) {
+    header {
+        justify-content: center;
+    }
+
+    header div.box-logo {
+        width: 50%;
+        justify-content: flex-start;
+    }
+
+    header div.box-logo img {
+        margin-left: 20px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header div.co-menu {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+/* The Main */
+main {
+    height: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    margin-top: 80px;
+}
+
+/* Blurry Circle */
+main::after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+    opacity: 0.5;
+    border-radius: 50%;
+    filter: drop-shadow(0px 0px 25px var(--c00edff, #00edff)) blur(100px);
+    background-color: var(--c00edff, #00edff);
+}
+
+main div.box-int {
+    width: 500px;
+    direction: rtl;
+    z-index: 1;
+}
+
+main div.box-int div.box-hello {
+    margin-bottom: 20px;
+}
+
+main div.box-int div.box-hello p {
+    color: var(--white, white);
+    font-family: "Zain";
+    /* Arabic - 1 */
+}
+
+main div.box-int div.box-neves {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main div.box-int div.box-neves h1 {
+    color: var(--white, white);
+    font-family: "Zain";
+    /* Arabic - 1 */
+}
+
+main div.box-int div.box-neves p {
+    color: var(--white, white);
+    font-family: "Zain";
+    /* Arabic - 1 */
+}
+
+main div.box-int div.box-neves p span {
+    filter: drop-shadow(0px 0px 25px var(--c00edff, #00edff));
+    text-shadow: 0 0 10px var(--c00edff, #00edff);
+    color: var(--c00edff, #00edff);
+}
+
+main div.box-int div.box-this {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main div.box-int div.box-this p {
+    color: var(--white, white);
+    font-family: "Zain";
+    /* Arabic - 1 */
+}
+
+main div.box-int div.box-icons {
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main div.box-int div.box-icons a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    border-radius: 50%;
+    border: solid 2px var(--c00edff, #00edff);
+    color: var(--c00edff, #00edff);
+}
+
+main div.box-int div.box-icons a:hover {
+    box-shadow: 0 0 25px 10px var(--c00edff, #00edff);
+}
+
+main div.box-int div.box-go {
+    width: 250px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+main div.box-int div.box-go a {
+    width: 170px;
+    height: 40px;
+    display: block;
+    transition: all 0.5s ease;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    color: var(--balck, black);
+    border: solid 2px var(--white, white);
+    box-shadow: 0 0 25px 0px var(--c00edff, #00edff);
+    background-color: var(--c00edff, #00edff);
+    font-family: "Zain";
+    /* Arabic - 1 */
+}
+
+main div.box-int div.box-go a:hover {
+    box-shadow: 0 0 25px 10px var(--c00edff, #00edff);
+}
+
+main div.box-imge {
+    width: 500px;
+}
+
+main div.box-imge img {
+    width: 80%;
+    filter: drop-shadow(0px 0px 20px var(--c00edff, #00edff));
+}
+
+/* Responsive Main */
+@media (max-width: 1200px) {
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    main div.box-int {
+        width: 90%;
+    }
+
+    main div.box-int div.box-icons {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    main div.box-int div.box-go {
+        width: 100%;
+    }
+
+    main div.box-int div.box-go a {
+        width: 90%;
+        height: auto;
+    }
+
+    main div.box-imge {
+        width: 90%;
+    }
+}
+
+/* The section - 1 */
+section.section-1 {
+    height: 800px;
+    background-color: var(--c313743, #313743);
+}
+
+/* The section - 2 */
+section.section-2 {}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--c313743, #313743);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--c1f232d, #1f232d);
 }
