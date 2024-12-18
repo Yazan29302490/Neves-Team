@@ -1,3 +1,7 @@
+
+
+
+
 /* 
 
  - This is a Neves team project. The header and main are now complete.
@@ -5,7 +9,6 @@
    the one that has not been created. Good luck.
 
 */
-
 
 
 
@@ -325,7 +328,9 @@ main div.box-int div.box-icons a {
 }
 
 main div.box-int div.box-icons a:hover {
+    color: var(--balck, black);
     box-shadow: 0 0 25px 10px var(--c00edff, #00edff);
+    background-color: var(--white, white);
 }
 
 main div.box-int div.box-go {
@@ -357,10 +362,14 @@ main div.box-int div.box-go a {
 
 main div.box-int div.box-go a:hover {
     box-shadow: 0 0 25px 10px var(--c00edff, #00edff);
+    background-color: var(--white, white);
 }
 
 main div.box-imge {
     width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main div.box-imge img {
