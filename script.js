@@ -1,44 +1,75 @@
+
+
+
+
+// Nevis Team Project
+
+
+
 // Variables
-let DisplayScreen = window.innerWidth;
-let lastScrollTop = 0;
-let header = document.querySelector("header");
-let btnMenu = document.getElementById("btn-menu");
-let boxMenu = document.getElementById("box-menu");
+let contentBoxsS1 = document.querySelectorAll("section.section-1 div.box-content");
+let featuresS2 = document.querySelectorAll("section.section-2 div.box-content div.box-features");
+let imgesS2 = document.querySelectorAll("section.section-2 div.box-content div.box-imge");
+let allImgesFromS1 = document.querySelectorAll("section.section-2 img");
+let contentBoxsS3 = document.querySelectorAll("section.section-3 div.box-content");
+let footer = document.querySelector("footer");
 
-// Job For Header => Add actve class when scroll is greater than 500
-window.addEventListener("scroll", () => {
-  if (window.scrollY >= 500) {
-    header.classList.add("black-fog");
-  } else {
-    header.classList.remove("black-fog");
-  };
-  // console.log(this.scrollY);
-});
+if (contentBoxsS1.length > 0) {
+  animationPage();
+};
 
-window.addEventListener("scroll", () => {
-  let scrollY = window.scrollY;
-  // Responsive condition
-  if (DisplayScreen >= 1200) {
-    // scrollY condition
-    if (scrollY > 500) {
-      // Job For Heade => When it goes up, it adds an active class, and when it goes down, it removes an active class.
-      let currentScrollTop = window.scrollY;
-      if (currentScrollTop > lastScrollTop) {
-        header.classList.add("up-down");
+function animationPage() {
+  if (window.scrollY > 500) {
+    contentBoxsS1.forEach((element, index) => {
+      if (window.innerWidth < 900) {
+        element.style.animation = `box-content ${0.4 + index * 0.1}s forwards ease`;
       } else {
-        header.classList.remove("up-down");
+        element.style.animation = "box-content 1s forwards ease";
       };
-      lastScrollTop = currentScrollTop;
-    } else {
-      header.classList.add("up-down");
-    };
-  } else {
-    header.classList.add("up-down");
+    });
   };
+  if (window.scrollY > 1200) {
+    featuresS2.forEach(element => {
+      element.style.animation = "s2-right 1s forwards ease";
+    });
+    imgesS2.forEach(element => {
+      element.style.animation = "s2-left 1s forwards ease";
+    });
+  };
+  if (window.scrollY > 2000) {
+    contentBoxsS3.forEach((element, index) => {
+      element.style.animation = "s2-right 1s forwards ease";
+      if (index === 1) {
+        element.style.animation = "s2-left 1s forwards ease";
+      }
+    });
+  };
+  if (window.scrollY > 2400) {
+    footer.style.animation = "f-animation 1s forwards ease"
+  }
+};
+
+window.addEventListener("scroll", () => {
+  animationPage();
 });
 
-
-// Job menu => When you press the menu button, the menu opens.
-btnMenu.addEventListener("click", () => {
-  boxMenu.classList.toggle("active");
+allImgesFromS1.forEach(element => {
+  element.addEventListener("mousemove", (event) => {
+    let rect = element.getBoundingClientRect();
+    let x = event.clientX - rect.left;
+    let y = event.clientY - rect.top;
+    element.classList.remove("top-right", "top-left", "bottom-right", "bottom-left");
+    if (x >= rect.width / 2 && y < rect.height / 2) {
+      element.classList.add("top-right");
+    } else if (x < rect.width / 2 && y < rect.height / 2) {
+      element.classList.add("top-left");
+    } else if (x >= rect.width / 2 && y >= rect.height / 2) {
+      element.classList.add("bottom-right");
+    } else if (x < rect.width / 2 && y >= rect.height / 2) {
+      element.classList.add("bottom-left");
+    };
+  });
+  element.addEventListener("mouseleave", () => {
+    element.classList.remove("top-right", "top-left", "bottom-right", "bottom-left");
+  });
 });

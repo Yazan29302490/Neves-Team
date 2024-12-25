@@ -1,9 +1,9 @@
-Image sources are:
+All website content sources
 
-1 - Logo => Created by Photopea
+for main background: https://haikei.app/
 
-2 - Background Of Main => https://haikei.app/
+For icons: https://fontawesome.com/
 
-3 - Imge Of Main => https://undraw.co/
+To make svg images on the website: https://undraw.co/
 
-=============================================
+To make partitions between sections: https://getwaves.io/

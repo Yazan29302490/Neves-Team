@@ -1,3 +1,7 @@
+<!-- Nevis Team Project -->
+
+
+
 <!DOCTYPE html>
 <html lang="ar">
 
@@ -8,7 +12,11 @@
   <!-- The Icon of Website -->
   <link rel="shortcut icon" href="Pictures/1.png" type="image/x-icon">
   <!-- Font Awesome Library Link (CSS) -->
-  <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.css">
+  <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.css">
+  <!-- Link Header (CSS) -->
+  <link rel="stylesheet" href="header/headerCss.css">
+  <!-- Link Footer (CSS) -->
+  <link rel="stylesheet" href="footer/footer.css">
   <!-- The source of file style -->
   <link rel="stylesheet" href="style.css">
   <title>موقغ فريق نيفيس</title>
@@ -20,8 +28,19 @@
   <div class="co-header-main">
     <!-- The Header -->
     <header class="up-down">
-      <div class="box-logo">
-        <img src="Pictures/1.png" alt="خطأ في تحميل الصورة يرجى التأكد من اتصالك في الانترنت">
+      <div class="co-menu">
+        <button class="btn-menu" id="btn-menu"><i class="fa-solid fa-bars"></i></button>
+        <div class="box-menu" id="box-menu">
+          <nav>
+            <ul>
+              <li><a href="" class="active">الصفحة الرئيسية</a></li>
+              <li><a href="">قسم البرمجة</a></li>
+              <li><a href="">قسم التصميم</a></li>
+              <li><a href="">الفريق</a></li>
+              <li><a href="">من نحن</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
       <nav>
         <ul>
@@ -32,25 +51,13 @@
           <li><a href="">من نحن</a></li>
         </ul>
       </nav>
-      <div class="co-menu">
-        <button class="btn-menu" id="btn-menu"><i class="fa-solid fa-bars"></i></button>
-        <div class="box-menu" id="box-menu">
-          <ul>
-            <li><a href="" class="active">الصفحة الرئيسية</a></li>
-            <li><a href="">قسم البرمجة</a></li>
-            <li><a href="">قسم التصميم</a></li>
-            <li><a href="">الفريق</a></li>
-            <li><a href="">من نحن</a></li>
-          </ul>
-        </div>
+      <div class="box-logo">
+        <img src="Pictures/1.png" alt="خطأ في تحميل الصورة يرجى التأكد من اتصالك في الانترنت">
       </div>
     </header>
 
     <!-- The Main -->
     <main>
-      <div class="box-imge">
-        <img src="Pictures/6.svg" alt="خطأ في تحميل الصورة يرجى التأكد من اتصالك في الانترنت">
-      </div>
       <div class="box-int">
         <div class="box-hello">
           <p>مرحبا نحن فريق</p>
@@ -72,6 +79,9 @@
           <a href="">اذهب الى الفريق</a>
         </div>
       </div>
+      <div class="box-imge">
+        <img src="Pictures/6.svg" alt="خطأ في تحميل الصورة يرجى التأكد من اتصالك في الانترنت">
+      </div>
     </main>
   </div>
 
@@ -81,16 +91,187 @@
   </svg>
 
   <!-- The Section 1 -->
-  <section class="section-1"></section>
+  <section class="section-1">
+    <div class="co-contents">
+      <div class="box-title">
+        <h1>اعضاء الفريق</h1>
+        <p>جميع اعضاء فريق نيفيس</p>
+      </div>
+      <div class="box-contents">
+        <div class="box-content box-content-1">
+          <div class="box-icon">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="box-name">
+            <h1>يزن</h1>
+          </div>
+        </div>
+        <div class="box-content box-content-2">
+          <div class="box-icon">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="box-name">
+            <h1>الشمري</h1>
+          </div>
+        </div>
+        <div class="box-content box-content-3">
+          <div class="box-icon">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="box-name">
+            <h1>احمد</h1>
+          </div>
+        </div>
+        <div class="box-content box-content-4">
+          <div class="box-icon">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="box-name">
+            <h1>احمد</h1>
+          </div>
+        </div>
+        <div class="box-content box-content-5">
+          <div class="box-icon">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="box-name">
+            <h1>سلطان</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- The Section 2 -->
-  <section class="section-2"></section>
+  <section class="section-2">
+    <div class="co-contents">
+      <div class="box-title">
+        <h1>سِمات</h1>
+      </div>
+      <div class="box-contents">
+        <div class="box-content box-content-1">
+          <div class="box-features">
+            <h1>محترفين</h1>
+            <p>فريق محترف في انشاء المواقع</p>
+          </div>
+          <div class="box-imge">
+            <img src="Pictures/7.svg" alt="خطأ في تحميل الصورة يرجى التأكد من اتصالك في الانترنت">
+          </div>
+        </div>
+        <div class="box-content box-content-2">
+          <div class="box-features">
+            <h1>متعاونون</h1>
+            <p>نساعد بعضنا</p>
+          </div>
+          <div class="box-imge">
+            <img src="Pictures/8.svg" alt="خطأ في تحميل الصورة يرجى التأكد من اتصالك في الانترنت">
+          </div>
+        </div>
+        <div class="box-content box-content-3">
+          <div class="box-features">
+            <h1>مكافحون</h1>
+            <p>نعمل بجد</p>
+          </div>
+          <div class="box-imge">
+            <img src="Pictures/9.svg" alt="خطأ في تحميل الصورة يرجى التأكد من اتصالك في الانترنت">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Section 3 -->
+  <section class="section-3">
+    <div class="co-contents">
+      <div class="box-title">
+        <h1>خوادمنا</h1>
+      </div>
+      <div class="box-contents">
+        <div class="box-content box-content-1">
+          <div class="box-imge">
+            <img src="Pictures/10.webp" alt="خطأ في تحميل الصورة يرجى التأكد من اتصالك في الانترنت">
+          </div>
+          <div class="box-text">
+            <h1>نيفيس</h1>
+            <p>سيرفر نيفيس هو سيرفر عام للمبرمجين ولاعبين القيمنق وعامة الناس</p>
+          </div>
+          <div class="box-btn">
+            <li><a href="https://discord.gg/9D29H9szeC" target="_blank" rel="noopener noreferrer">دخول</a></li>
+          </div>
+        </div>
+        <div class="box-content box-content-2">
+          <div class="box-imge">
+            <img src="Pictures/11.png" alt="خطأ في تحميل الصورة يرجى التأكد من اتصالك في الانترنت">
+          </div>
+          <div class="box-text">
+            <h1>كريتيف نيتورك</h1>
+            <p>سيرفر كريتيف نيتورك هو سيرفر خاص بالمبرمجين ويتفور ايضا فيه تعليم للبرمجة</p>
+          </div>
+          <div class="box-btn">
+            <li><a href="https://discord.gg/B9rn779bD5" target="_blank" rel="noopener noreferrer">دخول</a></li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- The Footer -->
-  <footer></footer>
+  <footer>
+    <div class="co-contents">
+      <div class="box-top">
+        <div class="box-part">
+          <div class="existing">
+            <nav>
+              <ul>
+                <li><a href="" class="active">الصفحة الرئيسية</a></li>
+                <li><a href="">قسم البرمجة</a></li>
+                <li><a href="">قسم التصميم</a></li>
+                <li><a href="">الفريق</a></li>
+                <li><a href="">من نحن</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="box-part">
+          <div class="existing">
+            <ul>
+              <li><a href="">فيس بوك</a></li>
+              <li><a href="">اكس</a></li>
+              <li><a href="">انستا</a></li>
+              <li><a href="">لينكدإن</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="box-part">
+          <div class="existing">
+            <ul>
+              <li><a href="">مساعدة</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="box-logo">
+          <div class="box-imge">
+            <img src="Pictures/1.png" alt="خطأ في تحميل الصورة يرجى التأكد من اتصالك في الانترنت">
+          </div>
+          <div class="box-icons">
+            <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="box-bottom">
+        <h1> 2024 - 2024 &copy;</h1>
+      </div>
+    </div>
+  </footer>
 
   <!-- Font Awesome Library Link (JS) -->
-  <script src="fontawesome-free-6.5.1-web/js/all.js"></script>
+  <script src="fontawesome-free-6.5.2-web/js/all.js"></script>
+
+  <!-- Link Header (JS) -->
+  <script src="header/headerJs.js"></script>
 
   <!-- Link script.js file -->
   <script src="script.js"></script>
