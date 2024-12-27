@@ -1,11 +1,8 @@
-/* Nevis Team Project */
+/* Neves Team Project */
 
 
 
 /* You are now in a special file in Footer and css extension. */
-
-
-
 
 
 
@@ -173,45 +170,44 @@ footer div.co-contents div.box-bottom h1:hover {
 /* Animation Footer */
 @keyframes f-animation {
   from {
-    height: 0;
-      opacity: 0;
+    opacity: 0;
   }
 
   to {
-      height: 500px;
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 /* Responsive footer */
 @media (max-width: 600px) {
   footer {
-      height: auto !important;
+    height: auto !important;
   }
+
   footer div.co-contents div.box-top {
-      flex-direction: column;
-      justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   footer div.co-contents div.box-top div.box-part:nth-child(1) {
-      margin-top: 20px;
+    margin-top: 20px;
   }
 
   footer div.co-contents div.box-top div.box-part:nth-child(3) div.existing>ul {
-      height: max-content;
+    height: max-content;
   }
 }
 
 @media (max-width: 300px) {
   footer div.co-contents div.box-top div.box-part {
-      width: 90%;
+    width: 90%;
   }
 
   footer div.co-contents div.box-top div.box-logo {
-      width: 90%;
+    width: 90%;
   }
 
   footer div.co-contents div.box-top div.box-logo div.box-icons {
-      width: 90%;
+    width: 90%;
   }
 }

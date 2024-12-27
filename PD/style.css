@@ -1,0 +1,52 @@
+/* Neves Team Project */
+
+
+
+/* You are now on the programming section page */
+
+
+
+
+
+/* Fonts of Website */
+@font-face {
+  /* English - 1 */
+  font-family: "Hind Mysuru";
+  src: url("../Hind_Mysuru/HindMysuru-Medium.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  /* Arabic - 1 */
+  font-family: "Zain";
+  src: url("../Zain/Zain-ExtraLight.ttf");
+  font-style: normal;
+}
+
+/* Reset Page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* The Root Or Color Variables */
+:root {
+  /* The Colors Of Website */
+  --white: white;
+  --balck: black;
+  --c1f232d: #1f232d;
+  --c313743: #313743;
+  --c00edff: #00edff;
+  --transparent: transparent;
+  --rbgaWhite: rgba(255, 255, 255, 0.5);
+  --rbgaWhiteVeryTransparent: rgba(255, 255, 255, 0.09);
+  --rbgaBlack: rgba(0, 0, 0, 0.5);
+  --rbgaBlackSlightlyTransparent: rgba(0, 0, 0, 0.3);
+}
+
+/* The body */
+body {
+  direction: rtl;
+  background-color: var(--c1f232d, #1f232d);
+}
