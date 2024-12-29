@@ -1,5 +1,4 @@
-/* Neves Team Project */
-
-
-
-/* You are now on the Home page */
+// ( Neves Team Project )
+// ===============================================================
+// You are now in the programming file, design section page
+// ===============================================================

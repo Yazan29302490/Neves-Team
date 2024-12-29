@@ -1,8 +1,7 @@
-/* Neves Team Project */
-
-
-
-/* You are now in a special file in Footer and css extension. */
+/* ( Neves Team Project )
+   ===============================================================
+   You are now in a special file in Footer format.
+   =============================================================== */
 
 
 
@@ -61,6 +60,7 @@ footer div.co-contents div.box-top div.box-part div.existing nav ul li a {
   text-align: center;
   color: var(--white, white);
   font-family: "Zain";
+  /* Arabic - 1 */
 }
 
 footer div.co-contents div.box-top div.box-part div.existing nav ul li a:hover {
@@ -94,6 +94,7 @@ footer div.co-contents div.box-top div.box-part div.existing>ul li a {
   text-align: center;
   color: var(--white, white);
   font-family: "Zain";
+  /* Arabic - 1 */
 }
 
 footer div.co-contents div.box-top div.box-part div.existing>ul li a:hover {
@@ -162,6 +163,13 @@ footer div.co-contents div.box-bottom h1 {
   font-size: 20px;
   color: var(--white, white);
   font-family: "Hind Mysuru";
+  /* English - 1 */
+}
+
+footer div.co-contents div.box-bottom h1 span {
+  font-weight: bold;
+  font-family: "Zain";
+  /* Arabic - 1 */
 }
 
 footer div.co-contents div.box-bottom h1:hover {

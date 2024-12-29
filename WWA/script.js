@@ -1,5 +1,4 @@
-/* Neves Team Project */
-
-
-
-/* Y<!-- You are now on the About Us page --> */
+// ( Neves Team Project )
+// ===============================================================
+// You are now in the programming file, about us page
+// ===============================================================

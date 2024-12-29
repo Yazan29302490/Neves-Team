@@ -1,8 +1,7 @@
-/* Neves Team Project */
-
-
-
-/* You are now in a special file in Header and css extension. */
+/* ( Neves Team Project )
+   ===============================================================
+   You are now in a file with Header format.
+   =============================================================== */
 
 
 
@@ -20,7 +19,7 @@ header {
   right: 0;
   left: 0;
   z-index: 1;
-  border-bottom: solid 1px var(--rbgaWhiteVeryTransparent, rgba(255, 255, 255, 0.09));
+  border-bottom: solid 1px var(--forHeaderOnly, rgba(255, 255, 255, 0.09));
 }
 
 header.black-fog {
@@ -56,7 +55,7 @@ header div.co-menu button.btn-menu {
   align-items: center;
   border-radius: 5px;
   margin-right: 10px;
-  background-color: var(--rbgaBlackSlightlyTransparent, rgba(0, 0, 0, 0.3));
+  background-color: var(--rbgaBlack, rgba(0, 0, 0, 0.5));
 }
 
 header div.co-menu button.btn-menu .fa-bars {
