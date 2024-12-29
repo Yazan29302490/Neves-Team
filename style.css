@@ -385,7 +385,7 @@ section.section-1 div.co-contents div.box-contents div.box-content {
     display: flex;
     opacity: 0;
     border-radius: 10px;
-    box-shadow: -25px 25px 25px 10px var(--rbgaBlack, rgba(0,0,0,0.5));
+    box-shadow: -15px 15px 25px 10px var(--rbgaBlack, rgba(0,0,0,0.5));
     background-color: var(--c1f232d, #1f232d);
 }
 
@@ -740,7 +740,7 @@ section.section-3 div.co-contents div.box-content div.box-btn li a {
 }
 
 section.section-3 div.co-contents div.box-content div.box-btn li:hover a::before {
-    animation: a-beforeS3 0.5s forwards ease-in-out;
+    animation: a-before-s3 0.5s forwards ease-in-out;
     visibility: visible;
 
 }
@@ -791,7 +791,7 @@ section.section-3 div.co-contents div.box-content div.box-btn a::before {
     }
 }
 
-@keyframes a-beforeS3 {
+@keyframes a-before-s3 {
     0% {
         transform: scale(1, 1);
         opacity: 0;
