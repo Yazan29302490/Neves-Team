@@ -802,6 +802,13 @@ section.section-3 div.co-contents div.box-content div.box-btn a::before {
     /* Arabic - 1 */
 }
 
+section.section-3 div.co-contents div.box-content div.box-btn li a .fa-arrow-up-right-from-square {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 /* Animation Section-3 */
 @keyframes s3-right {
     from {
@@ -883,7 +890,7 @@ div.train button {
 /* Responsive Train */
 @media (max-width: 500px) {
     div.train {
-        background-color: var(--rbgaBlack, rgba(0,0,0,0.5));
+        display: none;
     }
 }
 
@@ -892,7 +899,7 @@ div.train button {
         width: 250px;
         height: 50px;
         flex-direction: row;
-        top: 90%;
+        top: 80%;
         left: 50%;
         padding: 0 10px 0 10px;
     }

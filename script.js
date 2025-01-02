@@ -20,7 +20,7 @@ let contentBoxsS3 = document.querySelectorAll("section.section-3 div.box-content
 let footer = document.querySelector("footer");
 let train = document.querySelectorAll("div.train button");
 
-if (contentBoxsS1.length > 0 && featuresS2.length > 0 && imgesS2.length > 0 && imgesS2.length > 0 && contentBoxsS3.length > 0 && footer.length > 0) {
+if (contentBoxsS1.length > 0 || featuresS2.length > 0 || imgesS2.length > 0 || imgesS2.length > 0 || contentBoxsS3.length > 0 || footer.length > 0) {
   animationPage();
 };
 
