@@ -108,6 +108,7 @@ main div.box-int div.box-hello {
 }
 
 main div.box-int div.box-hello p {
+    font-size: 2rem;
     color: var(--white, white);
     font-family: "Zain";
     /* Arabic - 1 */
@@ -119,12 +120,14 @@ main div.box-int div.box-neves {
 }
 
 main div.box-int div.box-neves h1 {
+    font-size: 3rem;
     color: var(--white, white);
     font-family: "Zain";
     /* Arabic - 1 */
 }
 
 main div.box-int div.box-neves p {
+    font-size: 1.5rem;
     color: var(--white, white);
     font-family: "Zain";
     /* Arabic - 1 */
@@ -142,6 +145,7 @@ main div.box-int div.box-this {
 }
 
 main div.box-int div.box-this p {
+    font-size: 2rem;
     color: var(--white, white);
     font-family: "Zain";
     /* Arabic - 1 */
@@ -200,6 +204,7 @@ main div.box-int div.box-go li a {
     text-align: center;
     line-height: 40px;
     font-weight: bold;
+    font-size: 1rem;
     position: relative;
     color: var(--balck, black);
     box-shadow: 0 0 25px 0px var(--c00edff, #00edff);
@@ -352,9 +357,18 @@ main div.box-imge img {
     }
 }
 
-@media (max-width: 150px) {
+@media (max-width: 250px) {
     main div.box-int div.box-go {
         height: 150px;
+        
+    }
+
+    main div.box-int div.box-go li {
+        width: 100%;
+    }
+
+    main div.box-int div.box-go li a {
+        width: 100%;
     }
 }
 
@@ -384,6 +398,7 @@ section.section-1 div.co-contents div.box-title {
 section.section-1 div.co-contents div.box-title h1 {
     margin-right: 20px;
     margin-left: 20px;
+    font-size: 2rem;
     color: var(--c00edff, #00edff);
     font-family: "Zain";
     /* Arabic - 1 */
@@ -393,6 +408,7 @@ section.section-1 div.co-contents div.box-title p {
     margin-right: 20px;
     margin-left: 20px;
     opacity: 0.5;
+    font-size: 2rem;
     color: var(--white, white);
     font-family: "Zain";
     /* Arabic - 1 */
@@ -425,7 +441,7 @@ section.section-1 div.co-contents div.box-contents div.box-content div.box-icon 
 }
 
 section.section-1 div.co-contents div.box-contents div.box-content div.box-icon .fa-user {
-    font-size: 30px;
+    font-size: 2rem;
     color: var(--white, white);
 }
 
@@ -439,6 +455,7 @@ section.section-1 div.co-contents div.box-contents div.box-content div.box-name 
 
 section.section-1 div.co-contents div.box-contents div.box-content div.box-name h1 {
     text-shadow: 0 0 25px var(--white, white);
+    font-size: 2rem;
     color: var(--white, white);
     font-family: "Zain";
     /* Arabic - 1 */
@@ -496,10 +513,6 @@ section.section-1 div.co-contents div.box-contents div.box-content div.box-name 
     section.section-1 div.co-contents div.box-contents div.box-content div.box-name {
         width: 50%;
     }
-
-    section.section-1 div.co-contents div.box-contents div.box-content div.box-name h1 {
-        font-size: 15px;
-    }
 }
 
 @media (max-width: 300px) {
@@ -529,6 +542,7 @@ section.section-2 div.co-contents div.box-title {
 
 section.section-2 div.co-contents div.box-title h1 {
     text-align: center;
+    font-size: 2rem;
     color: var(--c00edff, #00edff);
     font-family: "Zain";
     /* Arabic - 1 */
@@ -559,13 +573,14 @@ section.section-2 div.co-contents div.box-contents div.box-content div.box-featu
 }
 
 section.section-2 div.co-contents div.box-contents div.box-content div.box-features h1 {
-    font-size: 40px;
+    font-size: 2rem;
     color: var(--white, white);
     font-family: "Zain";
     /* Arabic - 1 */
 }
 
 section.section-2 div.co-contents div.box-contents div.box-content div.box-features p {
+    font-size: 2rem;
     color: var(--white, white);
     font-family: "Zain";
     /* Arabic - 1 */
@@ -647,16 +662,6 @@ section.section-2 div.co-contents div.box-contents div.box-content div.box-imge 
     }
 }
 
-@media (max-width: 200px) {
-    section.section-2 div.co-contents div.box-contents div.box-content div.box-features h1 {
-        font-size: 20px;
-    }
-
-    section.section-2 div.co-contents div.box-contents div.box-content div.box-features p {
-        font-size: 10px;
-    }
-}
-
 svg.svg-2 {
     border: solid 2px red;
 }
@@ -680,6 +685,7 @@ section.section-3 div.co-contents div.box-title {
 
 section.section-3 div.co-contents div.box-title h1 {
     text-align: center;
+    font-size: 2rem;
     color: var(--c00edff, #00edff);
     font-family: "Zain";
     /* Arabic - 1 */
@@ -732,6 +738,7 @@ section.section-3 div.co-contents div.box-contents div.box-content div.box-text 
 
 section.section-3 div.co-contents div.box-contents div.box-content div.box-text h1 {
     text-align: center;
+    font-size: 2rem;
     color: var(--white, white);
     font-family: "Zain";
     /* Arabic - 1 */
@@ -739,6 +746,7 @@ section.section-3 div.co-contents div.box-contents div.box-content div.box-text 
 
 section.section-3 div.co-contents div.box-content div.box-text p {
     text-align: center;
+    font-size: 1rem;
     color: var(--white, white);
     font-family: "Zain";
     /* Arabic - 1 */
@@ -768,6 +776,7 @@ section.section-3 div.co-contents div.box-content div.box-btn li a {
     line-height: 40px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.5rem;
     color: var(--white, white);
     background-color: var(--c313743, #313743);
     font-family: "Zain";
