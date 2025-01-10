@@ -49,3 +49,153 @@ body {
   direction: rtl;
   background-color: var(--c1f232d, #1f232d);
 }
+section.section-1 {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border: solid 2px transparent;
+  background-color: var(--c313743, #313743);
+}
+
+section.section-1 div.co-contents {
+  margin-top: 20px;
+  margin-bottom: 120px;
+}
+
+section.section-1 div.co-contents div.box-title {
+  margin-bottom: 20px;
+}
+
+section.section-1 div.co-contents div.box-title h1 {
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: 2rem;
+  color: var(--c00edff, #00edff);
+  font-family: "Zain";
+  /* Arabic - 1 */
+}
+
+section.section-1 div.co-contents div.box-title p {
+  margin-right: 20px;
+  margin-left: 20px;
+  opacity: 0.5;
+  font-size: 2rem;
+  color: var(--white, white);
+  font-family: "Zain";
+  /* Arabic - 1 */
+}
+
+section.section-1 div.co-contents div.box-contents {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: repeat(2, 100px);
+  justify-content: center;
+  gap: 20px;
+}
+
+section.section-1 div.co-contents div.box-contents div.box-content {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  opacity: 0;
+  border-radius: 10px;
+  box-shadow: -15px 15px 25px 10px var(--rbgaBlack, rgba(0, 0, 0, 0.5));
+  background-color: var(--c1f232d, #1f232d);
+}
+
+section.section-1 div.co-contents div.box-contents div.box-content div.box-icon {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.section-1 div.co-contents div.box-contents div.box-content div.box-icon .fa-user {
+  font-size: 2rem;
+  color: var(--white, white);
+}
+
+section.section-1 div.co-contents div.box-contents div.box-content div.box-name {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.section-1 div.co-contents div.box-contents div.box-content div.box-name h1 {
+  text-shadow: 0 0 25px var(--white, white);
+  font-size: 2rem;
+  color: var(--white, white);
+  font-family: "Zain";
+  /* Arabic - 1 */
+}
+
+/* Animation Section */
+@keyframes box-content {
+  from {
+      opacity: 0;
+      transform: translateX(50px);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateX(0px);
+  }
+}
+
+/* Responsive Section-1 */
+@media (max-width: 1300px) {
+  section.section-1 div.co-contents div.box-contents {
+      grid-template-columns: repeat(2, 400px);
+  }
+}
+
+@media (max-width: 900px) {
+  section.section-1 div.co-contents {
+      margin-bottom: 20px;
+  }
+
+  section.section-1 div.co-contents div.box-contents {
+      grid-template-columns: repeat(1, 400px);
+      grid-template-rows: repeat(3, 100px);
+  }
+}
+
+@media (max-width: 500px) {
+  section.section-1 {
+      display: block;
+  }
+
+  section.section-1 div.co-contents div.box-contents {
+      grid-template-columns: repeat(1, 100%);
+  }
+
+  section.section-1 div.co-contents div.box-contents div.box-content {
+      width: 90%;
+      margin: 0 auto;
+  }
+
+  section.section-1 div.co-contents div.box-contents div.box-content div.box-icon {
+      width: 50%;
+  }
+
+  section.section-1 div.co-contents div.box-contents div.box-content div.box-name {
+      width: 50%;
+  }
+}
+
+@media (max-width: 300px) {
+  section.section-1 div.co-contents div.box-contents div.box-content {
+      flex-direction: column;
+  }
+
+  section.section-1 div.co-contents div.box-contents div.box-content div.box-icon {
+      width: 100%;
+  }
+
+  section.section-1 div.co-contents div.box-contents div.box-content div.box-name {
+      width: 100%;
+  }
+}

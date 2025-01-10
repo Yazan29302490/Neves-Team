@@ -52,18 +52,50 @@ body {
 }
 main {
   height: 800px;
-}
-
-main div.box-content{
-  height: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
-main div.box-content button{
+
+button {
   all: unset;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 4rem;
+  z-index: 1;
+}
+
+button svg {
   color: white;
 }
-main div.box-content img{
-  width: 50%;
+
+button.btn-left {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+}
+
+button.btn-right {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+}
+
+div.box-videos {
+ 
+  height: 400px;
+  width: 600px;
+}
+
+div.box-videos img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: none;
+}
+
+div.box-videos img.active {
+  display: block;
+ 
 }
