@@ -50,9 +50,8 @@ body {
   background-color: var(--c1f232d, #1f232d);
 }
 main {
-  height: 800px;
   margin-top: 80px;
-  color: var(--rbgaWhite);
+  color: whitesmoke
 }
 main h2 {
   margin: 40px 30px;
@@ -63,4 +62,9 @@ main h2 {
   border-color: #00edff;
   padding: 0;
   box-shadow: -25px 25px 25px 10px var(--rbgaBlack);
+  margin: 20px;
+  width: 18rem;
+}
+.co-contents {
+    bottom: 0;
 }
