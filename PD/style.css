@@ -49,3 +49,18 @@ body {
   direction: rtl;
   background-color: var(--c1f232d, #1f232d);
 }
+main {
+  height: 800px;
+  margin-top: 80px;
+  color: var(--rbgaWhite);
+}
+main h2 {
+  margin: 40px 30px;
+}
+.card {
+  background-color:#1f232d;
+  color: #00edff;
+  border-color: #00edff;
+  padding: 0;
+  box-shadow: -25px 25px 25px 10px var(--rbgaBlack);
+}
