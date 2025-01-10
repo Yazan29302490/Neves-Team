@@ -22,10 +22,14 @@
   font-style: normal;
 }
 
+html {
+  font-family: "Zain";
+}
+
 /* Reset Page */
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -42,10 +46,97 @@
   --rbgaWhiteVeryTransparent: rgba(255, 255, 255, 0.09);
   --rbgaBlack: rgba(0, 0, 0, 0.5);
   --rbgaBlackSlightlyTransparent: rgba(0, 0, 0, 0.3);
+
 }
 
 /* The body */
 body {
   direction: rtl;
   background-color: var(--c1f232d, #1f232d);
+}
+
+/* The Main */
+main {
+  margin-top: 120px;
+}
+
+main div.co-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main div.co-content div.box-title {
+  width: 80%;
+
+}
+
+main div.co-content div.box-title h1 {
+  color: var(--white, white);
+  font-size: 30px
+}
+
+main div.co-content div.box-title p {
+  color: var(--white, white);
+  opacity: 0.7;
+
+}
+
+main div.co-content div.box-content {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.4%;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  width: 90%;
+  margin-top: 80px;
+  justify-content: center;
+}
+
+main div.co-content div.box-content div.card {
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
+  background-color: var(--c313743, #313743);
+
+}
+
+main div.co-content div.box-content div.box-image {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+main div.co-content div.box-content div.box-image img {
+  width: 80%;
+  border-radius: 50%
+}
+
+main div.co-content div.box-content div.box-name {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main div.co-content div.box-content div.box-name h1 {
+  text-align: center;
+  color: var(--white, white);
+}
+
+/* Responsive Main */
+@media (max-width:600px) {
+  main div.co-content div.box-content {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+  }
+}
+
+@media (max-width:400px) {
+  main div.co-content div.box-content {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto;
+  }
 }

@@ -1,8 +1,3 @@
-// ( Neves Team Project )
-// ===============================================================
-// You are now in the programming file, design section page
-// ===============================================================
-
 
 let buttons = document.querySelectorAll("main button");
 let videos = document.querySelectorAll("div.box-videos img");
